@@ -1,7 +1,8 @@
 <?php
 
 echo <<<heredoc
-gallery page
+<span><h1 class="h1Header">Gallery</h1></span>
 heredoc;
+echo require ("htmlFoot.inc");
 
 ?>

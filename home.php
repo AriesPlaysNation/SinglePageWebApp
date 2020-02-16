@@ -10,4 +10,4 @@ $rt .= "<a class='linkA' href='https://paypal.me/TheAriesPlays'><img class='imag
 $rt .= "</div>";
 
 echo $rt;
-?>
+echo require ("htmlFoot.inc");

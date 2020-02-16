@@ -2,4 +2,3 @@
 
 echo "error page";
 ?>
-?>

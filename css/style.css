@@ -9,6 +9,12 @@ body
     background-color: darkblue;
 }
 
+#servicesArticle
+{
+    text-align: center;
+    margin: 10px;
+}
+
 .linkA
 {
     width: 200px;
