@@ -6,7 +6,7 @@ echo <<<heredoc
 || &copy 2019-$year ConsterTube Production Services ||
 </footer>
 </div><!--wrapper-->
-<script src="scripts/script.js"></script>
+<script src="scripts/script2.js"></script>
 <script src="scripts/ajaxFramework.js"></script>
 </body>
 </html>

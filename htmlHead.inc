@@ -15,7 +15,7 @@ echo <<<heredoc
 <div id="wrapper">
 <header>
 
-    <nav id="nav">
+    <nav id="navHeader">
     <div id="smallIcons">
             <a class="smallIconsLink" href="https://www.youtube.com/channel/UCcTk8rsmR7VXt4r0cR9X3YQ"><img class="smallIconsImg" src="img/youtubeLogo.png"></a>
             <a class="smallIconsLink" href="https://twitter.com/conner_yt_"><img class="smallIconsImg" src="img/twitterLogo.png"></a>
