@@ -1,7 +1,7 @@
 <?php
 /* Author:          Brad Botteron
 Date Written:       2/14/2020
-Desc:               ConsterTube Home/SPA
+Desc:               ConsterTube Home/SPA + meta description from database
 */
 
 echo <<<heredoc
@@ -9,6 +9,9 @@ echo <<<heredoc
 <html lang="en">
 <head>
 <title>$title</title>
+heredoc;
+echo "\n<meta name=\"description\" content=\"$metaDescription\">\n";
+echo <<<heredoc
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>

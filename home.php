@@ -4,6 +4,8 @@ Date Written:   2/15/2020
 Desc:           home.php (home page for spa index)
 */
 
+$pageID = "home";
+
 echo <<<heredoc
 <span><h1 class="h1Header">Home ConsterTube</h1></span>
 <article id="homeArticle">
@@ -17,4 +19,5 @@ echo <<<heredoc
 </article>
 heredoc;
 
-echo require ("htmlFoot.inc");
+
+?>

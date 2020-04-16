@@ -1,5 +1,7 @@
 <?php
 
+$pageID = "services";
+
 echo <<<heredoc
 <span><h1 class="h1Header">Services</h1></span>
 
@@ -21,5 +23,6 @@ echo <<<heredoc
 
 </article>
 heredoc;
-echo require ("htmlFoot.inc");
+
+
 ?>
