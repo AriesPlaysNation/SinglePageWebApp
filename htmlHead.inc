@@ -10,6 +10,7 @@ echo <<<heredoc
 <head>
 <title>$title</title>
 heredoc;
+//echo "\n<meta name=\"description\" content=\"$metaDescription\">\n";
 echo "\n<meta name=\"description\" content=\"$metaDescription\">\n";
 echo <<<heredoc
 <link rel="stylesheet" href="css/style.css">
@@ -33,6 +34,7 @@ echo <<<heredoc
             <li id="services" class="navUl">Services</li>
             <li id="news" class="navUl">News</li>
             <li id="gallery" class="navUl">Gallery</li>
+            <li id="login" class="navUl">Login</li>
         </ul>
     </nav>
 </header>

@@ -63,11 +63,51 @@ function ajaxFunction(whichSelected) {
             stuff = "gallery.php";
             console.log("gallery");
             break;
-        default:
+        case "login":
+            stuff = "login.php";
+            console.log("login");
+        /*default:
             stuff = "error.php";
             console.log("error");
-            break;
+            break;*/
     }
     ajaxRequest.open("GET", stuff, true);
     ajaxRequest.send(null);
+}
+
+function ajaxFunction2(whichSelected) {
+    console.log("Entering ajax-framework");
+    var ajaxRequest2; // The variable that makes the AJAX magic possible!
+    try {
+        // REAL BROWSERS
+        ajaxRequest2 = new XMLHttpRequest();
+        console.log("Going through with ajax");
+    } catch (e) {
+        // Internet Exploder Browsers
+        try {
+            ajaxRequest2 = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+            try {
+                ajaxRequest2 = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e) {
+                // something went wrong
+                alert("Your browser broke!");
+                return false;
+            }
+        }
+    }
+
+    ajaxRequest2.onreadystatechange = function () {
+        if(ajaxRequest2.readyState == 4)
+        {
+            console.log("Enter readystate 4");
+            var meta = document.getElementsByTagName("meta");
+            meta[0].setAttribute("content","");
+            meta[0].setAttribute("content", ajaxRequest2.responseText);
+            console.log("Tag set to: " + ajaxRequest2.responseText);
+        }
+    } // end of readystate change function() = {}
+    ajaxRequest2.open("GET", "selectMeta.php?page=" + whichSelected, true);
+    ajaxRequest2.send(null);
+    //ajaxRequest2.send("?page=" + whichSelected);
 }
